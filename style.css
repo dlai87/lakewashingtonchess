@@ -7,6 +7,12 @@
     --glass: rgba(255, 255, 255, 0.05);
 }
 
+.logo img {
+    height: 80px;    /* Adjust this to fit your design */
+    width: auto;     /* This keeps the proportions correct so it doesn't look stretched */
+    display: block;  /* Removes extra whitespace below the image */
+}
+
 body {
     /* Updated font to Georgia */
     font-family: 'Georgia', serif;
