@@ -19,7 +19,7 @@ body {
     background-color: var(--bg-dark);
     color: var(--text-main);
     margin: 0;
-    line-height: 1.5; /* Slightly more space for Cambria's serifs */
+    line-height: 2.0; /* Slightly more space for Cambria's serifs */
 }
 
 /* Sophisticated Navigation */
