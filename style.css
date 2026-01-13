@@ -1,0 +1,174 @@
+:root {
+    --bg-dark: #121212;
+    --card-bg: #1e1e26;
+    --accent-gold: #c0a080;
+    --text-main: #e0e0e0;
+    --text-dim: #a0a0a0;
+    --glass: rgba(255, 255, 255, 0.05);
+}
+
+body {
+    /* Updated font to Georgia */
+    font-family: 'Georgia', serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    margin: 0;
+    line-height: 1.7; /* Slightly more space for Georgia's serifs */
+}
+
+/* Sophisticated Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: rgba(18, 18, 18, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--glass);
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--accent-gold);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--accent-gold);
+}
+
+/* Hero Section */
+.hero {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* High-quality Chess Background */
+    background: linear-gradient(rgba(18,18,18,0.85), rgba(18,18,18,0.85)), 
+                url('https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&q=80&w=2000');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 3.8rem;
+    margin-bottom: 15px;
+    font-weight: normal;
+    color: #fff;
+    /* Adding a subtle glow to the white text */
+    text-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+/* Modern Cards */
+main { padding: 60px 8%; }
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 2.4rem;
+    color: var(--accent-gold);
+    font-weight: normal;
+}
+
+.event-card, .article-card {
+    background: var(--card-bg);
+    border: 1px solid var(--glass);
+    border-radius: 4px; /* Sharper corners look better with Georgia */
+    padding: 35px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-gold);
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+/* Buttons */
+.btn {
+    padding: 14px 28px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+    font-size: 0.95rem;
+    border: none;
+    cursor: pointer;
+}
+
+.primary {
+    background: var(--accent-gold);
+    color: #121212;
+}
+
+.primary:hover {
+    background: #e0c0a0;
+    box-shadow: 0 0 25px rgba(192, 160, 128, 0.3);
+}
+
+.secondary {
+    border: 1px solid var(--accent-gold);
+    color: var(--accent-gold);
+    margin-left: 10px;
+}
+
+.secondary:hover {
+    background: rgba(192, 160, 128, 0.1);
+}
+
+/* Sponsor Area */
+.sponsor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.sponsor-card {
+    background: var(--glass);
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--glass);
+    transition: 0.3s;
+    font-style: italic;
+}
+
+.sponsor-card:hover {
+    border-color: var(--accent-gold);
+    color: var(--accent-gold);
+}
+
+/* Table styling for Resources page */
+table {
+    font-size: 1.1rem;
+}
