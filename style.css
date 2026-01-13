@@ -14,12 +14,12 @@
 }
 
 body {
-    /* Updated font to Georgia */
-    font-family: 'Georgia', serif;
+    /* Updated font to Cambria */
+    font-family: 'Cambria', serif;
     background-color: var(--bg-dark);
     color: var(--text-main);
     margin: 0;
-    line-height: 1.7; /* Slightly more space for Georgia's serifs */
+    line-height: 1.7; /* Slightly more space for Cambria's serifs */
 }
 
 /* Sophisticated Navigation */
