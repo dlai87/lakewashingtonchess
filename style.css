@@ -160,7 +160,7 @@ h3 {
 
 .sponsor-card {
     background: var(--glass);
-    height: 120px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
