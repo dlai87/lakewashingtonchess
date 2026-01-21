@@ -201,3 +201,63 @@ table {
     transform: scale(1.03);
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
+
+
+/* =========================
+   Mobile Gallery Fix
+   ========================= */
+@media (max-width: 768px) {
+
+    /* Make nav stack nicely */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 0;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding-top: 10px;
+    }
+
+    /* Hero text spacing */
+    .hero {
+        padding: 40px 16px !important;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* Gallery grid: 2 columns on phone */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 0 12px;
+    }
+
+    /* Make images shorter so they don't feel cramped */
+    .gallery-grid img {
+        height: 140px;
+        border-radius: 10px;
+    }
+}
+
+/* Extra small phones (very narrow) */
+@media (max-width: 420px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid img {
+        height: 200px;
+    }
+}
